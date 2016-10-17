@@ -1,0 +1,125 @@
+
+<html>
+<head>
+<meta charset="utf-8"/>
+<title> Amino Acd Analysis</title>
+<link rel="stylesheet" type="text/css" href="amino_cstyle.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+$(document).ready(function () {
+    $(".tab").click(function () {
+        $(".tab").removeClass("active");
+        $(this).addClass("active");
+        $("#tabbed-content .tab-content").hide();
+        $($(this).attr("href")).show();
+    });
+});      
+</script>
+</head>
+<body>
+    <div class="header display_inline height1 color_head1">
+        <div class="header_sub1"><img src="usc.jpg" id="usc_img"></div>
+           <div class="header_sub2">
+                <ul class="menu">
+                <li>About &nbsp; </li>
+                <li>&nbsp; | &nbsp; </li>
+                <li>&nbsp; Search</li>
+                <li>&nbsp; | &nbsp; </li>
+                <li>&nbsp; Contact</li>
+            </ul>
+            </div>
+    </div>
+    <div class="style_head2">
+        <p id="head2_norris" class="color_white"><span id="color_yellow">USC</span> Norris Comprehensive Cancer Center</p>
+        <p id="head2_keck" class="color_white">Keck Medicine of <span id="color_yellow">USC</span></p>
+    </div>
+    <div class="header display_inline menu_style">
+        <ul class="display_inline color_white" id="menu_tab">
+            <li><a href="#tab-1" class="tab">Home</a></li>
+            <li><a href="http://localhost/Oncampus/login.php" id="no_underline">Login</a></li>
+            <li><a href="#tab-2" class="tab">Education</a></li>
+            <li><a href="#tab-3" class="tab">Research</a></li>
+        </ul>
+    </div>
+
+    <div id="tabbed-content">
+        <div id="tab-1" class="tab-content">
+            <div id="amino_img" class="display_inline">
+                <div >
+                <!-- <img class="mySlides" src="    "> -->
+                    <img class="mySlides" src="Slideshow/cancer-research.jpg">
+                    <img class="mySlides" src="Slideshow/Hospital.jpg">
+                    <img class="mySlides" src="Slideshow/medicine.jpg">
+                    <img class="mySlides" src="Slideshow/person_chem.jpg">
+                    <img class="mySlides" src="Slideshow/skin-doctor.jpg">
+                    <!-- <img class="mySlides" src="Slideshow/tab-b"> -->
+                </div>
+                <div id="norris_intro">
+                    The USC Norris Comprehensive Cancer leader in           cancer research,        withmembers investigating the               and progression of cancer,      developing  strategies and   searching for cuis          part  of the  Keck  School of designated     by the            Institute as  one of the      naticomprehensive     cancer centers.
+                </div>
+            </div>
+        </div>
+        <div id="tab-2" class="tab-content hidden">
+            <div class="tab2">
+                <span id="education">Education</span>
+                <p>Located on the USC Health Sciences Campus, the USC Norris Comprehensive Cancer Center is an organized research unit of the University of Southern California that is a part of the administration of the Keck School of Medicine of USC.</p>
+
+                <p>The more than 200 basic scientists and physicians at the USC Norris are mostly faculty members              of the Keck School of Medicine. Students studying for their master's, doctoral or medical               degrees work alongside these faculty members, as well as resident physicians and post-doctoral              researchers. Under their tutelage, students train for their future scientific careers and also          participate in cutting-edge research.</p>
+
+                <p>Multiple degrees and programs are offered through the Keck School of Medicine, providing the                opportunity to work or conduct research in the USC Norris Comprehensive Cancer Center.</p>
+                
+                <p><strong>Childrens Hospital Los Angeles</strong><br>
+                Educational opportunities are also available at Childrens Hospital Los Angeles (CHLA).<br></p>
+                
+                <p>Fellowship training at CHLA offers an exciting range of opportunities for an advanced               pediatric education in a wide array of programs. CHLA offers experience in basic,               translational or clinical research, along with a robust program of Health Outcomes and          Community Health Research. Each division provides a milieu for research productivity, enhanced          by the presence of the highly regarded Saban Research Institute at Childrens Hospital Los             Angeles.</p>
+            </div>
+            
+        </div>
+         <div id="tab-3" class="tab-content hidden">
+            <div class="tab3">
+                <span id="research"><u>Research</u></span>
+                <p>Since 1973, the USC Norris Comprehensive Cancer Center has emerged as a major regional and national resource for cancer research, treatment, prevention and education. Building upon strengths in basic and population-based research, the Center's members have developed strong, peer-reviewed funded research programs focused on cancers of major consequence.<br>
+                Cancer Center members currently hold research grants totaling $134 million in direct costs.</p>
+
+<p><strong>Programs</strong><br>
+The more than 200 members are organized into five thematic and five translational research programs, including a "bridge" program in developmental therapeutics. The thematic programs are in the fields of molecular genetics, epigenetics and regulation, tumor microenvironment, cancer epidemiology and cancer control research. The translational programs, which provide to our focus transdisciplinary research efforts, are in developmental therapeutics, genitourinary cancers, gastrointestinal cancers, women's cancers, and leukemia and lymphoma.</p>
+
+<p>Under the transdisciplinary research model, investigational programs at the USC Norris are organized by disease - not academic discipline - allowing physicians, epidemiologists and biologists to work together to pool and apply their knowledge toward addressing specific components of cancer.</p>
+
+<p>For example, clinicians interested in the treatment of breast cancer, epidemiologists and geneticists studying its cause, and biochemists investigating hormonal therapies that modulate breast cancer cells in the laboratory all work in concert at the USC Norris Comprehensive Cancer Center.</p>
+
+<p><strong>Education</strong><br>
+To share this knowledge, USC Norris offers a variety of education programs, including grand rounds, tumor boards and research conferences to acquaint faculty, staff, students and visiting physicians with advances in oncology research and treatment. Continuing education programs for physicians and other professionals in the community are also offered.</p>
+
+<p><strong>Expansion</strong><br>
+USC Norris underwent a major expansion with the addition of the Norman Topping Tower in 1996 and the Harlyne J. Norris Cancer Research Tower in 2007. These facilities were built with support from donors, the National Cancer Institute, the University of Southern California and the Kenneth Norris Jr. Cancer Hospital.</p>
+
+<p>Research at the USC Norris is focused on the following areas:
+<ul><li>Basic Cancer Research</li>
+<li>Clinical Research</li>
+<li>Translational Research</li>
+<li>Cancer Cause and Prevention</li>
+</ul>
+</p>
+            </div>
+        </div>
+    </div>
+<script type="text/javascript">
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+
+</script>
+</body>
+</html>

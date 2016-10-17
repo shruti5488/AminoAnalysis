@@ -1,0 +1,306 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.header {
+	background-color: rgb(34,33,33);
+    border: gray;
+    width: 100%;
+
+    }
+.display_inline{
+	display: inline-flex;
+}
+.height1 {
+	height: 67px;
+    }
+.style_head2 {
+	height: 97	px;
+    padding-top: 18px;
+    background: #900;
+    padding: 0px 50px 10px;
+    }
+.menu {
+	list-style: none;
+	margin-top: 20px;
+    margin-right: 100px;
+}
+
+.menu li {
+	float: right;
+	display: inline;
+	display: flex;	   
+}
+
+.header_sub1 { 	
+    width: 50%;
+    padding-left: 50px;
+    font-family: 'Tangerine', serif;
+
+    font-size: larger;
+    font-weight: bolder;
+}
+.color_head1 {
+	color: #999; 
+	font-size: large;
+}
+.header_sub2 { 
+    width: 50%;
+}
+#usc_img {
+	width: 225px;
+    height: 60px;
+    padding-top: 4px;
+}
+#amino_img{
+  background: url('homepage_wallpaper.jpg') no-repeat;
+  background-size: 100% 400px;
+  height: 400px;
+}
+#head2_norris{
+	    font-size: 36px;
+    	margin: 0px 0px 0px;
+    }
+#color_yellow{
+	color : rgb(253,195,59);
+}
+.color_white{
+	color: white;
+}
+#head2_keck{
+    	margin: 0px;
+    }
+.menu_style{
+  border-style: groove;
+  border-left: white;
+  border-right: white;
+  border-bottom-color: sandybrown;
+  border-top-color: sandybrown;  
+}
+#menu_tab{
+	list-style-type: none ;
+	margin: 0px;
+	padding-left: 20px;
+  height: 30px;
+}
+
+ul#menu_tab.display_inline.color_white li {
+	padding: 4px 22px 0px 32px;
+	font-size: 18px;
+}
+#no_underline{
+  text-decoration: none; 
+  color: inherit;
+}
+.tab {
+  color: inherit;
+  text-decoration: none;
+}
+.hidden {
+    display:none;
+}
+a{
+  cursor: pointer;
+}
+ul#menu_tab.display_inline.color_white li:hover{
+  background-color: #900;
+}
+.mySlides{ 
+  display: none;
+  width: 476px;
+  height: 320px;
+  margin-left: 100px;
+  margin-top: 40px;
+  border-style: groove;
+}
+#norris_intro {
+  text-align: center;
+  color: white;
+  padding-top: 100px;
+  padding-left: 70px;
+  padding-right: 70px;
+  font-size: 22px;
+  font-style: oblique;
+}
+.tab2{
+  display: inline-block;
+  font-size: 15px;
+  font-style: inherit;
+  color: white;
+  padding: 10px 500px 0px 50px;
+  background-image: url('biowallpaper.jpg');
+  background-repeat:repeat-y;
+  background-size: 100% 400px;
+}
+.tab3{
+  display: inline-block;
+  font-size: 15px;
+  font-style: inherit;
+  color: white;
+  padding: 10px 500px 0px 50px;
+  background-image: url('biowallpaper.jpg');
+  background-repeat:repeat-y;
+  background-size: 100% 400px;
+}
+#education{
+  font-size: 30px;
+}
+#research{
+  font-size: 30px;;
+}
+.form { 
+	background-color: darkred;
+  border-style: ridge;
+  width: 500px;
+  height: auto;
+  text-align: center;
+  margin-top: 60px;
+  margin-left: 350px;
+  max-width: 600px;
+/*  margin: 40px auto;*/
+  border-radius: 4px;
+  box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+ }
+.background{
+  /*background: url("amino2.gif"); */
+}
+.tab-group {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0px 0;
+}
+#login{
+  margin-top:40px;
+}
+#signup{
+  margin-top:10px;
+
+    color: white;
+}
+h1 {
+  margin:10px;
+}
+.tab-group .active a {
+  background: black;
+  color: #ffffff;
+  border-radius: 4px;
+}
+.field-wrap {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.top-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.top-row > div {
+  float: left;
+  width: 48%;
+  margin-right: 4%;
+}
+.top-row > div:last-child {
+  margin: 0;
+}
+
+.button {
+  border: 0;
+  outline: none;
+  border-radius: 0;
+  
+  font-size: 16px;;
+  font-weight: bold;
+  font-family: serif;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  background: black;
+  color: #ffffff;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-appearance: none;
+}
+.button:hover, .button:focus {
+  background: rgb(253,195,59);
+}
+
+.button-block {
+  display: block;
+  border-radius: 5px;
+  width: auto;
+  height: 30px;
+  margin-left: 210px;
+  margin-top: 25px;
+}
+
+.forgot {
+  margin-top: -20px;
+  text-align: right;
+}
+.form ul li.selected {
+  background-color: yellow;
+}
+.tab-group li a {
+    display: block;
+    text-decoration: none;
+    padding: 15px;
+    /*background: gray;*/
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+    float: left;
+    width: 50%;
+    text-align: center;
+    cursor: pointer;
+    -webkit-transition: .5s ease;
+    transition: .5s ease;
+}
+
+.form ul li a:hover{
+background-color: black;
+}
+
+.form ul li a:active{
+background-color: gray;
+}
+
+.tab-group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#For_Pass {
+  text-decoration: none;
+  color: white;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+
+
+
+/*.form .tab-group li a:hover:not(.active) {
+        background-color: yello;
+    }*/
+/*a:hover {
+  color: #179b77;
+}*/
+.amino_form{
+    width: 40%;
+    /*background: url(amino_gif.gif);*/
+    background: white;
+    padding: 40px 0px 0px 100px;
+    margin: 50px 315px;
+    height: 65%;
+  }
+#member_login{
+    padding: 8px 0px 5px 50px;
+}
+.admin{
+  background: url(amino_gif.gif);
+  height: 250px;
+  text-align: center;
+}
+.submit{
+  margin-left: 100px;
+}

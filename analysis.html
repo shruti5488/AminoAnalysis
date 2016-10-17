@@ -1,0 +1,45 @@
+
+<html>
+<head>
+<meta charset="utf-8"/>
+<title> Amino Acd Analysis</title>
+<link rel="stylesheet" type="text/css" href="amino_cstyle.css">
+</head>
+<body>
+    
+    <div class="analysis">
+    	<form action=""  id="form" class="amino_form">
+    		<h2>AMINO ACID ANALYSIS</h2>
+			<p>Enter the amino acid &nbsp;&nbsp;&nbsp;
+			<input type="text" name="amino" id="amino"> </p>
+			<p id="demo"></p>
+			<div>
+				<input type="submit" name="check" onclick="check_amino()">
+				<!-- <input type="button	" name="reset" onclick="reset_amino()"> -->
+			</div>
+		</form>	
+    </div>
+<script type="text/javascript">
+
+function check_amino() {
+	var amino = ['A', 'R', 'N', 'D', 'C', 'Q', 'E', 'G', 'H', 'I', 'L', 'K', 'M', 'F', 'P', 'S', 'T', 'W', 'Y', 'V'];
+	var input = document.getElementById("amino").value;
+	var output = Array.from(input);
+	var succ_count = 0;
+	document.getElementById("demo").innerHTML = output;
+		for(i=0;i<output.length;i++){
+    		for(j=0;j<amino.length;j++){
+        		if(amino[j] == output[i]){
+           	 		succ_count++;
+        		}
+    		}
+		}
+		if (succ_count === output.length) { alert('Correct! The enetered name is an amino acid');}
+		else { alert('The enetered word is not an amino acid');}	
+}
+// function reset_amino() {
+// 	document.getElementById("form").reset();
+// }
+</script>
+</body>
+</html>

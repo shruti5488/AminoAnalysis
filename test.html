@@ -1,0 +1,73 @@
+
+<html>
+<head>
+<meta charset="utf-8"/>
+<title> Amino Acd Analysis</title>
+<link rel="stylesheet" type="text/css" href="amino_cstyle.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+    
+</script>
+</head>
+<body>
+    <div class="header display_inline height1 color_head1">
+        <div class="header_sub1"><img src="usc.jpg" id="usc_img"></div>
+           <div class="header_sub2">
+                <ul class="menu">
+                <li>About &nbsp; </li>
+                <li>&nbsp; | &nbsp; </li>
+                <li>&nbsp; Search</li>
+                <li>&nbsp; | &nbsp; </li>
+                <li>&nbsp; Contact</li>
+            </ul>
+            </div>
+    </div>
+    <div class="style_head2">
+        <p id="head2_norris" class="color_white"><span id="color_yellow">USC</span> Norris Comprehensive Cancer Center</p>
+        <p id="head2_keck" class="color_white">Keck Medicine of <span id="color_yellow">USC</span></p>
+    </div>
+    <div class="header display_inline menu_style">
+        <ul class="display_inline color_white" id="menu_tab">
+            <li><a href="#tab-1" class="tab">Home</a></li>
+            <li><a href="http://localhost/Oncampus/login.php" id="no_underline">Login</a></li>
+            <li><a href="#tab-3" class="tab">Education</a></li>
+            <li> <a href="#tab-4" class="tab">Research</a></li>
+        </ul>
+    </div>
+    
+    <div id="tabbed-content">
+        <div id="tab-1" class="tab-content">Hello1</div>
+        <div id="tab-2" class="tab-content hidden">hello2</div>
+        <div id="tab-3" class="tab-content hidden">hello3</div>
+        <div id="tab-4" class="tab-content hidden">hello4</div>
+    </div>
+
+<script type="text/javascript">
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+
+// function showStuff(element)  {
+//     var tabContents = document.getElementsByClassName('tabContent');
+//     for (var i = 0; i < tabContents.length; i++) { 
+//         tabContents[i].style.display = 'none';
+//     }
+    
+//     var tabContentIdToShow = element.id.replace(/(\d)/g, '-$1');
+//     document.getElementById(tabContentIdToShow).style.display = 'block';
+// }
+
+</script>
+</body>
+</html>
